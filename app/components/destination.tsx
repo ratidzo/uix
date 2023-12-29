@@ -17,15 +17,17 @@ export default function Destination(
 
 ) {
     return (
-        <div className="border w-[30vw]">
-            <img alt={city} src={image_url} className="w-full" />
-            <div className="flex gap-2 flex-wrap">
+        <div className="w-[25vw] rounded-lg shadow">
+            <img alt={city} src={image_url} className="w-full rounded-t-lg " />
+            <div className="flex px-4 pb-8 pt-2 gap-2 flex-wrap">
                 <div className={`${nunito_sans_semibold.className}
-                `}>
-                    <h1> {city},{state} </h1>
+                 text-gray-500 `}>
+                    <h1> {city}, {state} </h1>
                 </div>
                
-                <h1>{ description } </h1>
+                <div className="text-gray-800">
+                    <h1>{ description } </h1>
+                </div>
              
             </div>
         </div>
