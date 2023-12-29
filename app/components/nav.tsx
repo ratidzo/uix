@@ -1,6 +1,7 @@
 import { Nunito_Sans } from "next/font/google"
 import Image from "next/image"
 import Link from "next/link"
+import Button from "./buttton"
 
 const nunito_sans_bold = Nunito_Sans({
     subsets: ['latin'],
@@ -62,7 +63,7 @@ export default function Nav() {
                 </ul>
             </div>
             <div>
-                Button
+                <Button label="Sign in"/>
             </div>
         </nav>
     )
