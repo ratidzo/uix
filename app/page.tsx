@@ -5,7 +5,7 @@ export default async function Home() {
   const destinations = await getDestinations()
   return (
     <div className='flex justify-center w-full py-8 px-8'>
-      <ul className='flex justify-center flex-wrap'>
+      <ul className='flex justify-center flex-wrap gap-6'>
         {
           destinations.map((destination: any) => (
             <li key={destination.id}>

@@ -1,5 +1,4 @@
 import { URL } from "url";
-import Image from "next/image";
 import { Nunito_Sans } from "next/font/google";
 
 
@@ -18,16 +17,16 @@ export default function Destination(
 
 ) {
     return (
-        <div className="border">
-            <Image alt={city} width={128} height={128} src={image_url} />
-            <div className="flex gap-2">
-                <h1 className={`${nunito_sans_semibold.className}
+        <div className="border w-[30vw]">
+            <img alt={city} src={image_url} className="w-full" />
+            <div className="flex gap-2 flex-wrap">
+                <div className={`${nunito_sans_semibold.className}
                 `}>
-                    {city}, {state}
-                </h1>
-                <span>
-                    { description }
-                </span>
+                    <h1> {city},{state} </h1>
+                </div>
+               
+                <h1>{ description } </h1>
+             
             </div>
         </div>
     )
