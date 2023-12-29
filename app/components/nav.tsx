@@ -13,6 +13,25 @@ const nunito_sans = Nunito_Sans({
 })
 
 export default function Nav() {
+    const links = [
+        {
+            name: 'Bookings',
+            url: '/'
+        },
+        {
+            name: 'Flights',
+            url: '/'
+        },
+        {
+            name: 'Company',
+            url: '/'
+        },
+        {
+            name: 'FAQs',
+            url: '/'
+        }
+    ]
+
     return (
         <nav className="flex items-center justify-between px-8 py-4 bg-accent-purple-extralight">
             <div className={`flex items-center gap-1 ${nunito_sans_bold.className} text-primary-purple-blue
@@ -24,7 +43,7 @@ export default function Nav() {
                 width={32} height={32}/>
             </div>
             <div>
-                Links
+                
             </div>
             <div>
                 Button
